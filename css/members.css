@@ -1,0 +1,51 @@
+table {
+	width: 100%;
+}
+
+p.msg {
+	background: #d2accf;
+	border: 1px solid black;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: potea 5s;
+	opacity: 0;
+	z-index: 999;
+}
+
+@keyframes potea {
+	0% { opacity: 1; top:-100%; }
+	10% { opacity: 1; top:-0; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+table p.img{
+	height: 50px;
+	width: 50px;
+	margin: 0px;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #8600b3;
+	border-radius: 50%;
+}
+
+table td {
+	padding: 10px;
+}
+
+tr, td, table {
+	border-collapse: collapse;
+	border: 0px solid #888;
+
+}
+
+tr {
+	border-bottom: 1px solid #888;	
+}
+
+tr:hover {
+	background: #e699ff;	
+}

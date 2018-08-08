@@ -1,0 +1,89 @@
+#form {
+	height: 85vh;
+	margin-left: 30px;
+	width: 70vw;
+}
+
+p.msg {
+	background: #d2accf;
+	border: 1px solid black;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: potea 5s;
+	opacity: 0;
+	z-index: 999;
+}
+
+@keyframes potea {
+	0% { opacity: 1; top:-100%; }
+	10% { opacity: 1; top:-0; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+
+label, input {
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+label {
+	margin-bottom: 0px;
+}
+
+input {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border: 2px solid #4d0066;
+	border-radius: 5px;
+	background: #ecb3ff;
+	color: #4d0066;
+}
+
+input[type=submit]{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	background: #4d0066;
+	color: #fff;
+	transition: background 0.2s;
+}
+
+}
+
+
+input[type=submit]:hover{
+	background: #13001a;
+}
+
+#hh1 {
+	margin: 0px;
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+	color: #4d0066;
+}
+
+#log {
+	padding: 10px;
+	margin: 10px;
+}
+
+#sign {
+	margin:0 auto;
+	width: 80%;
+	padding: 0 10px;
+}
+
+#sign a{
+	font-size: 20px;
+}
+
+#sign a.right{
+	float:right;
+	display: inline-block;
+}

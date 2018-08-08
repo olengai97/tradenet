@@ -1,0 +1,182 @@
+* { box-sizing: border-box; font-size: 17px; }
+body { margin: 0; padding-top: 7vh; background: #f2ccff; }
+a { text-decoration: none; }
+
+p.msg {
+	background: #d2accf;
+	border: 1px solid black;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: potea 5s;
+	opacity: 0;
+	z-index: 999;
+}
+
+@keyframes potea {
+	0% { opacity: 1; top:-100%; }
+	10% { opacity: 1; top:-0; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+header {
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	background: #bf00ff;
+	box-shadow: 0px 0px 4px black;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+header #h1 {
+	padding: 10px 10px 10px 20px;
+	display: inline-block;
+	font-size: 25px;
+	color: #fff;
+}
+
+header nav {
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header nav a {
+	display: inline-block;
+	padding: 10px;
+	margin: 3px;
+	transition: color 0.2s;
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	color: #ddd;
+}
+
+
+aside {
+	position: fixed;
+	top: 7vh;
+	z-index: 9;
+	right: 0;
+	box-shadow: 0px -2px 4px black;
+	background: #e699ff;
+	padding:10px;
+	height: 93vh;
+	width: 25vw;
+}
+
+aside #prof_img {
+	height: 40vh;
+	width: 40vh;
+	margin:5px auto 30px;
+	border: 5px solid #8600b3;
+	border-radius: 50%;
+	background-size: cover;
+	box-shadow: 0px 0px 1px #000;
+	background-position: center;
+}
+
+aside #sell, aside #prof{
+	width: 80%;
+	padding: 10px;
+	margin: 10px auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #4d0066;
+	background: #8600b3;
+	transition: background 0.2s;
+	box-shadow: 0px 0px 1px #000;
+}
+
+aside #sell:hover, aside #prof:hover {
+	background: #000;
+}
+
+#main {
+	width: 75vw;
+	height: 93vh;
+	padding: 10px;
+}
+
+#main #heading {
+	width: 100%;
+	padding-left: 20px;
+	color: #4d0066;
+}
+/*  products.php  */
+#main #prods {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#main #prods  .prod {
+	transition: box-shadow 0.2s;
+	width: 31%;
+	box-shadow: 0px 0px 2px grey;
+	border: 1px solid #c61aff;
+	height: 350px;
+	border-radius: 2px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+
+
+#main #prods  .prod div {
+	font-size: 16px;
+	float: left;
+	width: 100%;
+	height: 10%;
+}
+
+#main #prods  .prod div.prod_title, #main #prods  .prod div.prod_seller, #main #prods  .prod div.prod_price {
+
+	color: #600080;
+	padding: 8px;
+	background: #ecb3ff;
+}
+
+#main #prods  .prod div.prod_title {
+	background: #c61aff;
+	color: #fff;
+}
+
+#main #prods  .prod div span a{
+	font-size: 16px;
+	color: #000;
+	padding-right: 3px;
+}
+
+#main #prods  .prod .prod_img {
+	height: 70%;
+	background-size: cover;
+	background-position: center;
+}
+.add2cart a{
+	position: absolute; 
+	right: 5px; 
+	bottom: 0;
+	display: inline-block;
+	height: 100%;
+	text-decoration: underline;
+	padding: 2.5px;
+}
+
